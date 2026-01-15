@@ -9,5 +9,5 @@ Download the latest snap package from the [Releases](https://github.com/AhmadAlk
 ## Installation
 
 ```bash
-sudo snap install --dangerous mumps-studio_2.0_amd64.snap
+sudo snap install --dangerous --classic mumps-studio_2.0_amd64.snap
 ```
