@@ -19,7 +19,7 @@ This repository holds the **user guide** and the **issue tracker**.
 - [Troubleshooting](#troubleshooting)
 - [Your data](#your-data)
 - [Reporting issues](#reporting-issues)
-- [Older releases](#older-releases)
+- [Older versions](#older-versions)
 
 ## Install
 
@@ -187,12 +187,15 @@ and choose *Bug report* or *Feature request*. Include the version
 **Never paste passwords, server addresses, patient data or other confidential
 information** into an issue or a screenshot.
 
-## Older releases
+## Older versions
 
-Version 2.0 and earlier were `--classic` snaps attached to the
-[Releases](https://github.com/AhmadAlkhalaileh/mumps-studio-releases/releases)
-page. 3.0 replaces them: remove the old one first (`sudo snap remove
-mumps-studio`), install 3.0 from the Snap Store and connect the permissions
-above.
+Mumps Studio is distributed only through the Snap Store. Earlier 2.x test
+builds were never published there and are no longer available. If you have
+one installed, remove it, then install 3.0 and connect the permissions above:
+
+```bash
+sudo snap remove mumps-studio
+sudo snap install mumps-studio
+```
 
 Contact: ahmadalkhalaileh62@gmail.com
