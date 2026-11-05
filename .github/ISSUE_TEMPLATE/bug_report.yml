@@ -1,0 +1,53 @@
+name: Bug report
+description: Something in Mumps Studio does not work as expected
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. **Do not paste passwords, server addresses, patient data or other confidential information**, in the text or in screenshots.
+  - type: input
+    id: version
+    attributes:
+      label: Mumps Studio version
+      description: Help > About, or `snap list mumps-studio`
+      placeholder: "3.0"
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Linux version
+      placeholder: Ubuntu 24.04
+    validations:
+      required: true
+  - type: dropdown
+    id: connection
+    attributes:
+      label: How do you connect?
+      options:
+        - Docker container
+        - SSH server
+        - Not connected yet
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Connect… > Docker Containers > …
+        2. …
+  - type: textarea
+    id: permissions
+    attributes:
+      label: Snap permissions
+      description: Output of `snap connections mumps-studio`
+      render: text

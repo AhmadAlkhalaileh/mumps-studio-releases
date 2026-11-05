@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: User guide
+    url: https://github.com/AhmadAlkhalaileh/mumps-studio-releases#readme
+    about: Install, permissions, connecting and troubleshooting
